@@ -10,7 +10,7 @@ on:
 
 concurrency:
   group: merge-${{ github.event.client_payload.ref || github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   merge:
